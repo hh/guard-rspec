@@ -46,7 +46,7 @@ module Guard
       end
 
       def spec_files
-        @spec_files ||= spec_paths.collect { |path| Dir[File.join(path, "**", "*_spec.rb")] }.flatten
+        @spec_files ||= spec_paths.collect { |path| Dir[File.join(path, "**", "*_test.rb")] }.flatten
       end
 
       def feature_files
